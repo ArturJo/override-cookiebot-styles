@@ -1,0 +1,24 @@
+{
+  "name": "override-cookiebot-styles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --no-source-map src/cookiebot-overrides.scss dist/cookiebot-overrides.css",
+    "build:compressed": "sass --no-source-map --style=compressed src/cookiebot-overrides.scss dist/cookiebot-overrides-compressed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturJo/override-cookiebot-styles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturJo/override-cookiebot-styles/issues"
+  },
+  "homepage": "https://github.com/ArturJo/override-cookiebot-styles#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.94.0"
+  }
+}

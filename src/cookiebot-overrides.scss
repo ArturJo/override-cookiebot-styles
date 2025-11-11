@@ -1,0 +1,74 @@
+html {
+  --cb-primary-color: #86674b;
+}
+
+#CookiebotWidget {
+  :focus-visible,
+  &:not(.CookiebotWidget-open) .Cookiebotwidget-logo {
+    outline: 2px solid var(--cb-primary-color) !important;
+  }
+
+  .CookiebotWidget-body .CookiebotWidget-consents-list li.CookiebotWidget-approved svg {
+    fill: var(--cb-primary-color) !important;
+  }
+
+  .CookiebotWidget-consent-details button {
+    color: var(--cb-primary-color) !important;
+  }
+
+  #CookiebotWidget-buttons {
+    #CookiebotWidget-btn-change {
+      background-color: var(--cb-primary-color) !important;
+      border-color: var(--cb-primary-color) !important;
+    }
+
+    #CookiebotWidget-btn-withdraw {
+      border-color: var(--cb-primary-color) !important;
+    }
+  }
+}
+
+#CybotCookiebotDialogNav {
+  .CybotCookiebotDialogNavItemLink {
+    &:hover {
+      color: var(--cb-primary-color) !important;
+    }
+
+    &.CybotCookiebotDialogActive {
+      border-bottom: 1px solid var(--cb-primary-color) !important;
+      color: var(--cb-primary-color) !important;
+    }
+  }
+}
+
+#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton {
+  background-color: var(--cb-primary-color) !important;
+  border: 2px solid var(--cb-primary-color) !important;
+}
+
+#CybotCookiebotDialog {
+  input:checked + .CybotCookiebotDialogBodyLevelButtonSlider {
+    background-color: var(--cb-primary-color) !important;
+  }
+
+  #CybotCookiebotDialogBodyContentText a,
+  #CybotCookiebotDialogDetailFooter a,
+  #CybotCookiebotDialogDetailBulkConsentList dt a,
+  .CybotCookiebotDialogBodyLevelButtonIABDescription a,
+  .CybotCookiebotDialogDetailBodyContentCookieLink,
+  #CybotCookiebotDialogBodyLevelButtonIABHeaderViewPartnersLink,
+  #CybotCookiebotDialogDetailBodyContentTextAbout a {
+    color: var(--cb-primary-color) !important;
+  }
+
+  .CookieCard {
+    .CybotCookiebotDialogDetailBodyContentCookieContainerButton:hover,
+    .CybotCookiebotDialogDetailBodyContentIABv2Tab:hover {
+      color: var(--cb-primary-color) !important;
+    }
+  }
+
+  #CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider:not(.CybotCookiebotDialogDetailBodyContentCookieInfoCount):hover {
+    color: var(--cb-primary-color) !important;
+  }
+}
