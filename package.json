@@ -1,24 +1,41 @@
 {
   "name": "override-cookiebot-styles",
   "version": "1.0.0",
-  "main": "index.js",
+  "style": "dist/cookiebot-overrides.css",
   "scripts": {
     "build": "sass --no-source-map src/cookiebot-overrides.scss dist/cookiebot-overrides.css",
-    "build:compressed": "sass --no-source-map --style=compressed src/cookiebot-overrides.scss dist/cookiebot-overrides-compressed.css"
+    "build:compressed": "sass --no-source-map --style=compressed src/cookiebot-overrides.scss dist/cookiebot-overrides-compressed.css",
+    "prepublishOnly": "npm run build && npm run build:compressed"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArturJo/override-cookiebot-styles.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cookiebot",
+    "cookie",
+    "consent",
+    "css",
+    "scss",
+    "styles",
+    "override",
+    "banner",
+    "widget"
+  ],
+  "author": "Artur Jozefiak (https://github.com/ArturJo)",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/ArturJo/override-cookiebot-styles/issues"
   },
   "homepage": "https://github.com/ArturJo/override-cookiebot-styles#readme",
-  "description": "",
-  "dependencies": {
+  "description": "CSS/SCSS-Overrides für Cookiebot (Banner & Widget) mit zentral steuerbarer Akzentfarbe über --cb-primary-color.",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
     "sass": "^1.94.0"
   }
 }
